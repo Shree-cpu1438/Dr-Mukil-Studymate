@@ -1,0 +1,44 @@
+.topic-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.topic-input__label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.topic-input__field {
+  padding: 0.625rem 0.875rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  color: var(--color-text);
+  background: var(--color-surface);
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.topic-input__field:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.topic-input__field:disabled {
+  background: #f1f5f9;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.topic-input__field--error {
+  border-color: var(--color-error);
+}
+
+.topic-input__error {
+  font-size: 0.8125rem;
+  color: var(--color-error);
+  margin-top: 0.125rem;
+}

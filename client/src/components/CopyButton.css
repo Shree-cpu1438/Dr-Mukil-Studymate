@@ -1,0 +1,31 @@
+.copy-button {
+  padding: 0.625rem 1.25rem;
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.copy-button:hover {
+  background: var(--color-primary-hover);
+}
+
+.copy-button--success {
+  background: var(--color-success);
+}
+
+.copy-button--success:hover {
+  background: #15803d;
+}
+
+.copy-button--error {
+  background: var(--color-error);
+}
+
+.copy-button--error:hover {
+  background: #b91c1c;
+}

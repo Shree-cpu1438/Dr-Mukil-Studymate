@@ -1,0 +1,17 @@
+.error-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.875rem 1rem;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: var(--border-radius);
+  color: var(--color-error);
+  font-size: 0.9375rem;
+  margin-bottom: 1rem;
+}
+
+.error-banner__icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
