@@ -43,8 +43,8 @@ app.post('/api/generate', async (req: Request, res: Response) => {
 });
 
 // Serve the React build in production
-// In production (server/dist/index.js), client/dist is two levels up then into client/dist
-const clientDist = path.join(__dirname, '../../client/dist');
+// Use process.cwd() to resolve from the project root regardless of where the compiled file lives
+const clientDist = path.join(process.cwd(), 'client', 'dist');
 app.use(express.static(clientDist));
 app.get('*', (_req: Request, res: Response) => {
   const indexPath = path.join(clientDist, 'index.html');
